@@ -1,3 +1,5 @@
+#아직 구조가 한눈에 잘 안들어온다. 주석에 대한 활용법을 더 익혀야겠다!
+
 import pandas as pd
 import seaborn as sns
 import matplotlib.pyplot as plt
