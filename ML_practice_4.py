@@ -22,7 +22,7 @@ data = pd.read_csv('Death_rates_for_suicide__by_sex__race__Hispanic_origin__and_
 data_X = data[["STUB_NAME_NUM", "STUB_LABEL_NUM", "YEAR_NUM", "AGE_NUM"]].values
 data_y = data['ESTIMATE'].values
 
-# NaN 값을 평균값으로 대체
+# NaN 값을 평균값으로 대체 --> 아 이런식으로 수정한 부분만 강조하는 개념인가!?
 mean_value = np.nanmean(data_y)
 data_y = np.where(np.isnan(data_y), mean_value, data_y)
 
